@@ -17,7 +17,7 @@ export default function Home() {
   const [htmlcode, setHtmlCode] = useState(
     typeof window !== "undefined" && localStorage.getItem("htmlCode")
       ? localStorage.getItem("htmlCode")
-      : ""
+      : "<H1>Welcome to my Editor</h1>"
   );
   const [csscode, setCssCode] = useState(
     typeof window !== "undefined" && localStorage.getItem("htmlCode")
